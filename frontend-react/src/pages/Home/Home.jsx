@@ -17,7 +17,10 @@ export default function Home() {
             <Button>Enter raffle</Button>
           </div>
           <div className="image-wrapper">
-            <img src="/assets/images/arcade-1.png" />
+            {/* <img src="https://media.giphy.com/media/35B3Val0pYgtpScqsz/source.gif" /> */}
+            {/* <img src="https://media.giphy.com/media/l3vR7ohqOmHgIOxTW/source.gif" /> */}
+            {/* <img src="https://media.giphy.com/media/2A2E8jxnMGAXzL4AMj/source.gif" /> */}
+            <img src="https://media.giphy.com/media/hJtqxkjZuu17W/source.gif" />
           </div>
         </S.Hero>
         <div className="emoji-divider">🥞 🥞 🥞 🥞 🥞 🥞 🥞 🥞 🥞 🥞 🥞</div>
