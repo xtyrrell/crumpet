@@ -4,6 +4,8 @@ import { useRaffleContract } from "../../../providers/RaffleContractProvider";
 
 import * as S from "./Styles";
 
+import { Container, Button } from "../../../styles/shared/Styles";
+
 function WalletStatus() {
   const { signer } = useRaffleContract();
 
@@ -25,7 +27,7 @@ function WalletStatus() {
 
 function ConnectWalletButton() {
   const { connectWallet } = useRaffleContract();
-  return <S.Button onClick={connectWallet}>Connect Wallet -{">"}</S.Button>;
+  return <Button onClick={connectWallet}>Connect Wallet -{">"}</Button>;
 }
 
 function DisconnectWalletButton() {
@@ -35,9 +37,11 @@ function DisconnectWalletButton() {
 
 export default function Navbar() {
   return (
-    <S.Navbar>
-      <div className="logo">Crumpet</div>
-      <WalletStatus />
-    </S.Navbar>
+    <Container>
+      <S.Navbar>
+        <div className="logo">Crumpet</div>
+        <WalletStatus />
+      </S.Navbar>
+    </Container>
   );
 }
